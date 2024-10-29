@@ -81,7 +81,7 @@ void ordenarPorContagem(vector<venda>& vendas){
 }
 
 int main() {
-    int numRegist = 1000;
+    int numRegist = 1000000;
 
     vector<venda> vendas = gerarVendasAleat(numRegist);
     ordenarPorContagem(vendas);
