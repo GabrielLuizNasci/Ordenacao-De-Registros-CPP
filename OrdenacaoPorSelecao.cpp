@@ -44,16 +44,6 @@ vector<venda> gerarVendasAleat(int numRegist) {
     return vendas;
 }
 
-int buscaQuantMax(const vector<venda>& vendas){
-	int quantMax = 0;
-	for(const auto& v : vendas) {
-		if(v.quantVendida > quantMax){
-			quantMax = v.quantVendida;
-		}
-	}
-	return quantMax;
-}
-
 void ordenarPorSelecao(vector<venda>& vendas) {
     int n = vendas.size();
     for (int i = 0; i < n - 1; ++i) {

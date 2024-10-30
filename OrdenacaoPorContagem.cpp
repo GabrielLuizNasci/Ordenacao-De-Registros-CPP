@@ -3,7 +3,6 @@
 #include <vector>
 #include <string>
 #include <random>
-#include <algorithm>
 using namespace std;
 
 struct venda{
@@ -81,7 +80,7 @@ void ordenarPorContagem(vector<venda>& vendas){
 }
 
 int main() {
-    int numRegist = 1000000;
+    int numRegist = 1000;
 
     vector<venda> vendas = gerarVendasAleat(numRegist);
     ordenarPorContagem(vendas);

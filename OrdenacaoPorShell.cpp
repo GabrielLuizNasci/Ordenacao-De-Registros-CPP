@@ -48,16 +48,6 @@ vector<venda> gerarVendasAleat(int numRegist){
     return vendas;
 }
 
-int buscaQuantMax(const vector<venda>& vendas){
-	int quantMax = 0;
-	for(const auto& v : vendas) {
-		if(v.quantVendida > quantMax){
-			quantMax = v.quantVendida;
-		}
-	}
-	return quantMax;
-}
-
 void ordenarPorShell(vector<venda>& vendas){
     int i, j;
 	int add = 1;
@@ -86,6 +76,5 @@ int main() {
 
     vector<venda> vendas = gerarVendasAleat(numRegist);
     ordenarPorShell(vendas);
-
     return 0;
 }
